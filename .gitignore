@@ -131,3 +131,4 @@ dmypy.json
 .vscode
 output
 datasets_sample
+.DS_Store

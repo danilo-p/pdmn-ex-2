@@ -7,8 +7,8 @@ run_cluster:
 run_jupyter:
 	PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
 
-get_file:
-	scp -r $(cluster_user)@$(cluster_ip):$(path) ./
+scp_file:
+	scp -r $(cluster_user)@$(cluster_ip):$(path) ./output/
 
 ssh_tunnel:
 	ssh $(cluster_user)@$(cluster_ip) -fNT -L 8088:localhost:8088

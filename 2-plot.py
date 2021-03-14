@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 
 def get_chart_data(country_code):
-    f = open("./output/local_tp2_2_mavg_data_{}.csv/all.csv".format(country_code), 'r')
+    f = open("./output/tp2_2_mavg_data_{}.csv/all.csv".format(country_code), 'r')
 
     x = []
     y = []
@@ -27,4 +27,4 @@ line_MX, = plt.plot(*get_chart_data("MX"), label="MX")
 
 plt.legend(handles=[line_US, line_BR, line_MX], loc='upper right')
 
-plt.savefig("results/2.png")
+plt.savefig("./output/2.png")
